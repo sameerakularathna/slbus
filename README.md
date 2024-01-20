@@ -1,4 +1,4 @@
-<h1>Web Development Process</h1>
+<h1>Web Development Project Plan</h1>
 
   <ol>
     <li>
@@ -38,6 +38,41 @@
       <p>Post-deployment, you’ll need to regularly update your website and fix any bugs or issues that come up.</p>
     </li>
   </ol>
+
+<hr>
+ <h1>Agile Development Process</h1>
+
+  <ol>
+    <li>
+      <strong>Product Backlog Creation:</strong>
+      <p>As the project administrator, you should work with the project manager to create a product backlog. This is a list of all features, functions, requirements, enhancements, and fixes that constitute the changes to be made to the product during the development process.</p>
+    </li>
+    <li>
+      <strong>Sprint Planning:</strong>
+      <p>The project manager will lead a sprint planning meeting at the start of each sprint. The team (front-end developer, back-end developer, and tester) will decide on the amount of work they believe they can complete from the product backlog.</p>
+    </li>
+    <li>
+      <strong>Sprint:</strong>
+      <p>The team will work on the tasks decided during the sprint planning. The front-end developer will work on the user interface, while the back-end developer will work on server-side functionalities. The tester will work alongside to ensure each feature is working as expected.</p>
+    </li>
+    <li>
+      <strong>Daily Stand-up:</strong>
+      <p>The project manager will conduct daily stand-up meetings to discuss what was done the previous day, what will be done today, and any obstacles in the way.</p>
+    </li>
+    <li>
+      <strong>Sprint Review:</strong>
+      <p>At the end of each sprint, the team will demonstrate the work completed during the sprint to the project manager and administrator.</p>
+    </li>
+    <li>
+      <strong>Sprint Retrospective:</strong>
+      <p>The team will meet to discuss what went well, what didn’t, and how processes could be improved for the next sprint.</p>
+    </li>
+    <li>
+      <strong>Next Sprint Planning:</strong>
+      <p>Based on the review and retrospective, the project manager will lead the next sprint planning.</p>
+    </li>
+  </ol>
+<hr>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
