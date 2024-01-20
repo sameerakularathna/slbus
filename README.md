@@ -98,6 +98,56 @@
     </li>
   </ol>
 <hr>
+<h1>Sprint Planning and Project Timeline</h1>
+
+  <h2>Sprint Planning</h2>
+  <table>
+    <tr>
+      <th>Sprint</th>
+      <th>Duration</th>
+      <th>Tasks</th>
+      <th>Team</th>
+    </tr>
+    <tr>
+      <td>Sprint 1</td>
+      <td>Weeks 1-2</td>
+      <td>Gather requirements, identify features for the seat booking system, and document them.</td>
+      <td>Project Manager, Administrator</td>
+    </tr>
+    <tr>
+      <td>Sprint 2</td>
+      <td>Weeks 3-4</td>
+      <td>Create wireframes and mockups of the website, get approval from the client.</td>
+      <td>Front-end Developer, Project Manager</td>
+    </tr>
+    <tr>
+      <td>Sprint 3</td>
+      <td>Weeks 5-6</td>
+      <td>Implement the approved designs, ensure the website is responsive.</td>
+      <td>Front-end Developer</td>
+    </tr>
+    <tr>
+      <td>Sprint 4</td>
+      <td>Weeks 7-8</td>
+      <td>Set up servers, databases, APIs, and server-side logic for the seat booking system.</td>
+      <td>Back-end Developer</td>
+    </tr>
+    <tr>
+      <td>Sprint 5</td>
+      <td>Weeks 9-10</td>
+      <td>Conduct unit testing, integration testing, functional testing, and usability testing.</td>
+      <td>Tester</td>
+    </tr>
+    <tr>
+      <td>Sprint 6</td>
+      <td>Weeks 11-12</td>
+      <td>Deploy the website, conduct final testing, fix any last-minute bugs, and handover the project to the client.</td>
+      <td>Project Manager, Front-end Developer, Back-end Developer, Tester</td>
+    </tr>
+  </table>
+<hr>
+
+<hr>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
