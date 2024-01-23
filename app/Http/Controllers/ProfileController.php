@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use Spatie\Permission\Models\Role;
+use Session;
 
 class ProfileController extends Controller
 {
@@ -56,5 +58,26 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function storeRole(Request $request): RedirectResponse
+    {
+        $newRole=$request->role;
+        //dd($newRole);
+        $roleDetails = Role::where('name', $newRole)->first();
+        if($roleDetails == null ){
+            Role::create(['name' => $request->role]);
+            Session::flash('RoleSuccess', 'New role has been successfully stored');
+                //log
+                //$log = new log();
+                //$log->user= Auth::user()->name ."(". Auth::user()->email.")";
+                //$log->description= Auth::user()->name ." ".'create role of'." ".$newRole;
+                //$log->save();
+                //log
+            return redirect()->route('rolestore');
+        } else{
+            Session::flash('RoleUnsuccess', 'The new role is already exist');
+            return redirect()->route('rolestore');
+        }
     }
 }
