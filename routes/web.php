@@ -38,7 +38,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::post('/role.create',[ProfileController::class, 'storeRole'])->name('role.create');
 Route::get('/rolestore',[HomeController::class, 'rolestore'])->name('rolestore');
+Route::post('/role.create',[ProfileController::class, 'storeRole'])->name('role.create');
 Route::get('/perstore',[HomeController::class, 'perstore'])->name('perstore');
+Route::post('/per.create',[ProfileController::class, 'storePer'])->name('per.create');

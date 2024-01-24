@@ -3,22 +3,22 @@
 @section('content')
 <div class="container">
 
-@if(Session('RoleSuccess'))
+@if(Session('PerSuccess'))
 <div class="alert alert-success">
-  <label>{{Session('RoleSuccess')}}</label>
+  <label>{{Session('PerSuccess')}}</label>
 </div>
 @endif
-@if(Session('RoleUnsuccess'))
+@if(Session('PerUnsuccess'))
 <div class="alert alert-danger">
-  <label>{{Session('RoleUnsuccess')}}</label>
+  <label>{{Session('PerUnsuccess')}}</label>
 </div>
 @endif
 
-        <form action="{{ route('role.create') }}" method="post">
+        <form action="{{ route('per.create') }}" method="post">
             @csrf
             <div class="form-group">
                 <label for="name">Permission:</label>
-                <input type="text" class="form-control" id="Permission" name="Permission" required>
+                <input type="text" class="form-control" id="per" name="per" required>
             </div>
             <!-- Add other user fields as needed -->
 

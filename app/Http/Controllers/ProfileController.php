@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
-use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 use Session;
 
 class ProfileController extends Controller
@@ -78,6 +78,26 @@ class ProfileController extends Controller
         } else{
             Session::flash('RoleUnsuccess', 'The new role is already exist');
             return redirect()->route('rolestore');
+        }
+    }
+    public function storePer(Request $request): RedirectResponse
+    {
+        $newPer=$request->per;
+        //dd($newPer);
+        $roleDetails = Permission::where('name', $newPer)->first();
+        if($roleDetails == null ){
+            Permission::create(['name' => $request->per]);
+            Session::flash('PerSuccess', 'New Permission has been successfully stored');
+            //log
+            //$log = new log();
+            //$log->user= Auth::user()->name ."(". Auth::user()->email.")";
+            //$log->description= Auth::user()->name ." ".'create permition of'." ".$newPer;
+            //$log->save();
+            //log
+            return redirect()->route('access');
+        } else{
+            Session::flash('PerUnsuccess', 'The new Permission is already exist');
+            return redirect()->route('perstore');
         }
     }
 }
