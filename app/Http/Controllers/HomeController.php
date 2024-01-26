@@ -33,4 +33,8 @@ class HomeController extends Controller
     {
         return view('admin.perstore');
     }
+    public function rolechange()
+    {
+        return view('admin.rolechange');
+    }
 }

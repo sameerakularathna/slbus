@@ -34,7 +34,7 @@
                     <div class="col-md-6 col-lg-3 mb-4">
                         <center>
                             <div class="model-Date">
-                                <a href="{{ route('rolestore') }}" class="btn btn-primary">
+                                <a href="{{ route('rolechange') }}" class="btn btn-primary">
                                     <i class="bi bi-person" style="font-size: 3rem;"></i>
                                     <br>Change User Role
                                 </a>

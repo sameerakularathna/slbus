@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('home');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -42,3 +43,8 @@ Route::get('/rolestore',[HomeController::class, 'rolestore'])->name('rolestore')
 Route::post('/role.create',[ProfileController::class, 'storeRole'])->name('role.create');
 Route::get('/perstore',[HomeController::class, 'perstore'])->name('perstore');
 Route::post('/per.create',[ProfileController::class, 'storePer'])->name('per.create');
+Route::get('/rolechange',[HomeController::class, 'rolechange'])->name('rolechange');
+Route::get('/edit-user', 'UserController@editUserForm')->name('edit.user.form');
+Route::post('/find-user', 'UserController@findUserByPhoneNumber');
+Route::post('/update-user', 'UserController@updateUser');
+
